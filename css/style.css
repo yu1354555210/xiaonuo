@@ -1,0 +1,127 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+body {
+  height: 100%;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clear {
+  clear: both;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+html,
+body {
+  min-height: 100%;
+  position: relative;
+  font-size: 0.833333rem;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+}
+.wrapper {
+  width: 26.66667rem;
+  min-width: 13.333335rem;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+}
+.bgSize {
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
