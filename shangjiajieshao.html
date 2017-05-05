@@ -10,17 +10,24 @@
     	<!--<![endif]-->
 		<title>小诺汽车---商家介绍</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href="http://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
 		<script src="js/fontrem.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<a href="#" class="icon-back action-back"></a>
+				<a href="#" class="icon-back"></a>
 				<h1>商家介绍</h1>
 			</header>
 			<div class="article-con">
-				<div class="article-header-img">
-					<img src="img/content_img_01.jpg"/>
+				<div class="article-header-img swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><img src="img/content_img_01.jpg"/></li>
+						<li class="swiper-slide"><img src="img/content_img_01.jpg"/></li>
+						<li class="swiper-slide"><img src="img/content_img_01.jpg"/></li>
+						<li class="swiper-slide"><img src="img/content_img_01.jpg"/></li>
+					</ul>
+					<div class="swiper-pagination"></div>
 				</div>
 				<div class="article-title bor-big-after">
 					<div class="article-title-text">穗鑫汽车用品经营部洗车坊</div>
@@ -36,17 +43,17 @@
 						<i class="icon-phone"></i><span>024-8869 6988</span>
 					</a>
 				</div>
-			</div>
-			<div class="content-item bor-big-after">
-				<h2>营业时间    <span>9:00-23:00</span></h2>
-			</div>
-			<div class="content-item bor-big-after">
-				<h2>服务项目</h2>
-				<p>洗车，打蜡，贴膜，喷漆</p>
-			</div>
-			<div class="content-item bor-big-after">
-				<h2>门店介绍</h2>
-				<p>穗鑫汽车用品经营部洗车坊是从事汽车美容、汽车养护、汽车装饰的汽车服务机构，全力推行“七分养，三分修”国际爱车新理念在中国的发展。以北京驰耐普直营店为榜样，让有车族感受到五星级的服务，三星级的收费。</p>
+				<div class="content-item bor-big-after">
+					<h2>营业时间    <span>9:00-23:00</span></h2>
+				</div>
+				<div class="content-item bor-big-after">
+					<h2>服务项目</h2>
+					<p>洗车，打蜡，贴膜，喷漆</p>
+				</div>
+				<div class="content-item bor-big-after">
+					<h2>门店介绍</h2>
+					<p>穗鑫汽车用品经营部洗车坊是从事汽车美容、汽车养护、汽车装饰的汽车服务机构，全力推行“七分养，三分修”国际爱车新理念在中国的发展。以北京驰耐普直营店为榜样，让有车族感受到五星级的服务，三星级的收费。</p>
+				</div>
 			</div>
 			<div class="comment">
 				<h2>用户点评</h2>
@@ -77,5 +84,15 @@
 				</div>
 			</div>
 		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+		<script type="text/javascript">
+			var MySwiper = new Swiper('.article-header-img', {
+				autoplay : 3000,
+				pagination : '.swiper-pagination',
+				paginationClickable :true,
+				autoplayDisableOnInteraction : false
+			});
+		</script>
 	</body>
 </html>
