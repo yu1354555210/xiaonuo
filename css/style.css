@@ -97,6 +97,7 @@ table {
 }
 * {
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 img {
   max-width: 100%;
@@ -120,8 +121,206 @@ textarea {
   background: #fff;
   box-sizing: border-box;
 }
-.bgSize {
+.display-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+[class^="icon-"] {
   -webkit-background-size: cover;
   background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-position,
+.icon-phone {
+  width: 1.166666rem;
+  height: 1.166666rem;
+  background-image: url(../img/icon_position.png);
+}
+.icon-phone {
+  background-image: url(../img/icon_phone.png);
+}
+.header {
+  height: 3.125rem;
+  line-height: 3.25rem;
+  background-color: #0096fd;
+  position: relative;
+  color: #fff;
+}
+.header .action-back {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-image: url(../img/icon_back.png);
+  float: left;
+}
+.header h1 {
+  position: absolute;
+  left: 3.125rem;
+  right: 3.125rem;
+  font-size: 1.291666rem;
+  font-weight: normal;
+}
+.article-con .article-header-img {
+  height: 14.166666rem;
+  overflow: hidden;
+}
+.article-con .article-title {
+  position: relative;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  width: 100%;
+  padding: 0 1.666666rem;
+  color: #333333;
+  font-size: 1.083333rem;
+}
+.article-con .article-title .article-title-text {
+  width: 16.75rem;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.star-box {
+  font-size: 0;
+  background-image: url(../img/icon_star_while.png);
+  background-repeat: repeat-x;
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.star-box .star {
+  overflow: hidden;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icon_star.png);
+  background-repeat: repeat-x;
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  position: absolute;
+  left: 0;
+}
+.article-star {
+  position: absolute;
+  right: 1.666666rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.bor-big-after {
+  margin-bottom: 0.708333rem;
+  position: relative;
+}
+.bor-big-after:after {
+  content: '';
+  display: block;
+  height: 0.708333rem;
+  margin-bottom: -0.708333rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bor-small-after {
+  position: relative;
+}
+.bor-small-after:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  background-color: #eaeaea;
+}
+.contact-item-box .contact-item {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.583333rem;
+  color: #555555;
+  font-size: 0.875rem;
+  position: relative;
+}
+.contact-item-box .contact-item span {
+  margin-left: 0.625rem;
+}
+.contact-item-box .contact-item:before {
+  content: '';
+  display: block;
+  width: 1.166666rem;
+  height: 1.166666rem;
+  background-image: url(../img/icon_right_sj_gray.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.contact-item-box .contact-item:active {
+  background-color: #eee;
+}
+.content-item {
+  padding: 1.166666rem 1.666666rem;
+}
+.content-item h2 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+.content-item h2 span {
+  font-size: 0.833333rem;
+}
+.content-item p {
+  padding-top: 0.625rem;
+  color: #777777;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+.comment {
+  padding: 1.125rem 1.666666rem;
+  overflow: hidden;
+}
+.comment h2 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+.comment h2 span {
+  font-size: 0.833333rem;
+}
+.comment .comment-item {
+  padding: 1.041666rem 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.comment .comment-item .comment-head {
+  flex: 0 0 2.166666rem;
+  -webkit-flex: 0 0 2.166666rem;
+  width: 2.166666rem;
+  margin-right: 0.916666rem;
+}
+.comment .comment-item .comment-content {
+  flex: 1;
+  -webkit-flex: 1;
+  color: #555555;
+  font-size: 0.875rem;
+}
+.comment .comment-item .comment-content .comment-star {
+  position: relative;
+  margin: 0.416666rem 0;
 }
 /*# sourceMappingURL=style.css.map */
