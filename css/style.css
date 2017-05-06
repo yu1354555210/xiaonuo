@@ -560,6 +560,9 @@ textarea {
   margin-left: 0.208333rem;
   overflow: hidden;
 }
+.focus {
+  height: 12.5rem;
+}
 .focus .swiper-pagination-bullet {
   width: 0.5rem !important;
   height: 0.5rem !important;
@@ -624,6 +627,7 @@ textarea {
   height: 3.541666rem;
   position: fixed;
   bottom: 0;
+  left: 0;
   border-top: 1px solid #f8f8f8;
   width: 100%;
   background-color: #fff;
