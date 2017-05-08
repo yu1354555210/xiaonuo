@@ -695,20 +695,20 @@ textarea {
 .icon-me {
   background-image: url(../img/foot_nav03.png);
 }
-.seller-tabs {
+.this-tabs {
   width: 100%;
   height: 3.75rem;
-  padding: 0 0.75rem;
   overflow: hidden;
+  background-color: #fff;
 }
-.seller-tabs ul {
+.this-tabs ul {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
   height: 3.75rem;
 }
-.seller-tabs ul li {
+.this-tabs ul li {
   text-align: center;
   flex: 1;
   -webkit-flex: 1;
@@ -716,13 +716,13 @@ textarea {
   line-height: 3.75rem;
   position: relative;
 }
-.seller-tabs ul li a {
+.this-tabs ul li a {
   height: 100%;
   display: block;
   color: #555555;
   font-size: 1.083333rem;
 }
-.seller-tabs ul li a.on:after {
+.this-tabs ul li a.on:after {
   height: 0.375rem;
   background-color: #6bc3ff;
   -webkit-transform: scaleX(1);
@@ -731,10 +731,10 @@ textarea {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-.seller-tabs ul li a:after {
+.this-tabs ul li a:after {
   background-color: #D5D5D5;
 }
-.seller-tabs ul li:first-child:after {
+.this-tabs ul li:after {
   content: '';
   display: block;
   width: 1px;
@@ -748,6 +748,12 @@ textarea {
   -ms-transform: scaleX(0.5) translateY(-50%);
   -o-transform: scaleX(0.5) translateY(-50%);
   transform: scaleX(0.5) translateY(-50%);
+}
+.this-tabs ul li:last-child:after {
+  display: none;
+}
+.seller-tabs {
+  padding: 0 0.75rem;
 }
 .seller-item {
   padding: 1.875rem 2rem 1.875rem 1.25rem;
@@ -1077,11 +1083,6 @@ textarea {
 .agreement .checkbox.active {
   background-image: url(../img/icon_checked.png);
 }
-.indicator {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
 .rad-cntnt {
   width: 100%;
   left: 0;
@@ -1104,5 +1105,209 @@ textarea {
 .rad-cntnt span {
   color: #ff5f08;
   font-size: 1.291666rem;
+}
+.member-item {
+  background-color: #fff;
+  padding: 1.041666rem 1rem 0.7rem;
+  overflow: hidden;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-bottom: 1.041666rem;
+}
+.member-item:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  background-color: #eaeaea;
+}
+.member-item:active {
+  background-color: #ccc;
+}
+.member-item:first-child {
+  margin-top: 1.791666rem;
+}
+.indicator {
+  position: relative;
+  text-align: center;
+  flex: 0 0 7.333333rem;
+  -webkit-flex: 0 0 7.333333rem;
+}
+.member-item-wrap {
+  flex: 1;
+  -webkit-flex: 1;
+  margin-left: 1rem;
+  position: relative;
+}
+.member-item-wrap strong {
+  display: block;
+  font-size: 1rem;
+  color: #333333;
+}
+.member-item-wrap strong span {
+  color: #0096fd;
+  font-size: 1.291666rem;
+}
+.member-item-wrap p {
+  margin: 0.625rem 0;
+  color: #565656;
+  font-size: 0.875rem;
+}
+.member-item-wrap:after {
+  content: '';
+  display: block;
+  width: 1.166666rem;
+  height: 1.166666rem;
+  background-image: url(../img/icon_right_sj_gray.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1.5);
+  -moz-transform: translateY(-50%) scale(1.5);
+  -ms-transform: translateY(-50%) scale(1.5);
+  -o-transform: translateY(-50%) scale(1.5);
+  transform: translateY(-50%) scale(1.5);
+}
+.xf-record-item {
+  padding: 2.083333rem 1.041666rem 0;
+  overflow: hidden;
+}
+.xf-record-item:last-child {
+  padding-bottom: 2.083333rem;
+}
+.xf-record-item .xf-record-item-top {
+  padding: 0 0.416666rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.xf-record-item .xf-record-item-top span {
+  color: #333333;
+}
+.xf-record-item .xf-record-item-top em {
+  font-style: normal;
+  color: #999999;
+}
+.xf-record-item .xf-record-item-wrap {
+  margin-top: 0.625rem;
+  background-color: #f8f8f8;
+  border: 1px solid #bbbbbb;
+  padding: 1.041666rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.xf-record-item .xf-record-item-wrap dl {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.xf-record-item .xf-record-item-wrap dl dt {
+  color: #333333;
+  font-size: 1.25rem;
+}
+.xf-record-item .xf-record-item-wrap dl dd {
+  margin-top: 0.833333rem;
+  font-size: 1rem;
+}
+.xf-record-item .xf-record-item-wrap dl dd span {
+  color: #0096fd;
+  font-size: 1.166666rem;
+  margin-right: 1.041666rem;
+}
+.small-btn {
+  width: 3.916666rem;
+  height: 2.083333rem;
+  line-height: 2.083333rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #0096fd;
+  -webkit-border-radius: 0.208333rem;
+  -moz-border-radius: 0.208333rem;
+  border-radius: 0.208333rem;
+}
+.swiper-slide-while {
+  background-color: #fff;
+}
+.cz-record-box {
+  padding: 1.041666rem 0.75rem;
+}
+.cz-record-box .cz-record-head {
+  padding: 1.458333rem 2.666666rem;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.cz-record-box .cz-record-head .cz-record-head-img {
+  width: 5.041666rem;
+  flex: 0 0 5.041666rem;
+  -webkit-flex: 0 0 5.041666rem;
+  height: 3.625rem;
+  margin-right: 1.083333rem;
+}
+.cz-record-box .cz-record-head .cz-record-head-wrap {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.cz-record-box .cz-record-head .cz-record-head-wrap h2 {
+  font-size: 1.083333rem;
+  color: #333;
+  font-weight: normal;
+}
+.cz-record-box .cz-record-head .cz-record-head-wrap p {
+  color: #666666;
+  font-size: 0.875rem;
+  margin-top: 0.625rem;
+}
+.cz-record-box .cz-record-title {
+  font-size: 0.958333rem;
+  height: 3.333333rem;
+  line-height: 3.333333rem;
+  color: #666666;
+}
+.cz-record-box .cz-record-table {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  border: 1px solid #d2d2d2;
+}
+.cz-record-box .cz-record-table .cz-record-tr {
+  width: 100%;
+  height: 2.416666rem;
+  vertical-align: middle;
+  font-size: 0.958333rem;
+}
+.cz-record-box .cz-record-table .cz-record-tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+.cz-record-box .cz-record-table .cz-record-td,
+.cz-record-box .cz-record-table .cz-record-th {
+  width: 50%;
+  height: 2.416666rem;
+  line-height: 2.416666rem;
+  float: left;
+}
+.cz-record-box .cz-record-table .cz-record-td:first-child,
+.cz-record-box .cz-record-table .cz-record-th:first-child {
+  border-right: 1px solid #d2d2d2;
+}
+.cz-record-box .cz-record-table .cz-record-th {
+  background-color: #c7e8ff;
+  color: #0096fd;
+}
+.cz-record-box .cz-record-table .cz-record-td {
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */

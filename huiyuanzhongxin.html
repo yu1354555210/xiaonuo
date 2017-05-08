@@ -10,6 +10,7 @@
     		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     	<!--<![endif]-->
 		<title>小诺汽车---会员中心</title>
+		<link href="http://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/fontrem.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -20,39 +21,178 @@
 				<a href="#" class="icon-back"></a>
 				<h1>会员中心</h1>
 			</header>
-			<div id="indicatorContainer" class="indicator">
-				<div class="rad-cntnt">
-					<div id="rad-sum" style="display: none;">100</div>
-					<b>剩余</b><span>15</span>个
+			<div class="member-tabs this-tabs">
+				<ul>
+					<li>
+						<a href="javascript:;" class="bor-small-after on">我的使用码</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="bor-small-after">消费记录</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="bor-small-after">充值记录</a>
+					</li>
+				</ul>
+			</div>
+			<div class="member-container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="member-item bor-small-after">
+							<div class="indicator" id="indicatorContainer0">
+								<div class="rad-cntnt">
+									<div class="rad-sum" style="display: none;">100</div>
+									<b>剩余</b><span>75</span>个
+								</div>
+							</div>
+							<div class="member-item-wrap">
+								<strong><span>普洗车</span>使用码</strong>
+								<p>所有门店通用</p>
+							</div>
+						</div>
+						<div class="member-item bor-small-after">
+							<div class="indicator" id="indicatorContainer1">
+								<div class="rad-cntnt">
+									<div class="rad-sum" style="display: none;">100</div>
+									<b>剩余</b><span>35</span>个
+								</div>
+							</div>
+							<div class="member-item-wrap">
+								<strong><span>精洗车</span>使用码</strong>
+								<p>所有门店通用</p>
+							</div>
+						</div>
+						<div class="member-item bor-small-after">
+							<div class="indicator" id="indicatorContainer2">
+								<div class="rad-cntnt">
+									<div class="rad-sum" style="display: none;">100</div>
+									<b>剩余</b><span>65</span>个
+								</div>
+							</div>
+							<div class="member-item-wrap">
+								<strong><span>精打蜡</span>使用码</strong>
+								<p>所有门店通用</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-while">
+						<div class="xf-record-item">
+							<div class="xf-record-item-top">
+								<span>订单号：20170506112</span>
+								<em>2017-05-06</em>
+							</div>
+							<div class="xf-record-item-wrap">
+								<dl>
+									<dt>普洗车家用五座洗车</dt>
+									<dd><span>车天翼亮晶坊</span>沈阳皇姑</dd>
+								</dl>
+								<a href="#" class="small-btn">评价</a>
+							</div>
+						</div>
+						<div class="xf-record-item">
+							<div class="xf-record-item-top">
+								<span>订单号：20170506112</span>
+								<em>2017-05-06</em>
+							</div>
+							<div class="xf-record-item-wrap">
+								<dl>
+									<dt>普洗车家用五座洗车</dt>
+									<dd><span>车天翼亮晶坊</span>沈阳皇姑</dd>
+								</dl>
+								<a href="#" class="small-btn">评价</a>
+							</div>
+						</div>
+						<div class="xf-record-item">
+							<div class="xf-record-item-top">
+								<span>订单号：20170506112</span>
+								<em>2017-05-06</em>
+							</div>
+							<div class="xf-record-item-wrap">
+								<dl>
+									<dt>普洗车家用五座洗车</dt>
+									<dd><span>车天翼亮晶坊</span>沈阳皇姑</dd>
+								</dl>
+								<a href="#" class="small-btn">评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-while">
+						<div class="cz-record-box">
+							<div class="cz-record-head">
+								<div class="cz-record-head-img">
+									<img src="img/icon-big-ka.png" />
+								</div>
+								<div class="cz-record-head-wrap">
+									<h2>贵宾卡</h2>
+									<p>开卡日期：2016-12-1</p>
+								</div>
+							</div>
+							<div class="cz-record-title">剩余：500积分</div>
+							<div class="cz-record-table">
+								<div class="cz-record-tr">
+									<div class="cz-record-th">充值日期</div>
+									<div class="cz-record-th">充值金额</div>
+								</div>
+								<div class="cz-record-tr">
+									<div class="cz-record-td">2017-01-05</div>
+									<div class="cz-record-td">300</div>
+								</div>
+								<div class="cz-record-tr">
+									<div class="cz-record-td">2017-01-05</div>
+									<div class="cz-record-td">300</div>
+								</div>
+								<div class="cz-record-tr">
+									<div class="cz-record-td">2017-01-05</div>
+									<div class="cz-record-td">300</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 
 		</div>
 		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/radialIndicator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
 		<script type="text/javascript">
+			var mySwiper = new Swiper('.member-container', {
+				autoHeight: true,
+				onSlideChangeStart: function(swiper) {
+					$('.member-tabs a').eq(mySwiper.activeIndex).addClass('on').parent().siblings().find('a').removeClass('on');
+				},
+				onInit: function(swiper) {
+					$('.swiper-wrapper').height('auto');
+				},
+			})
+			$('.member-tabs li').click(function() {
+				mySwiper.slideTo($(this).index());
+			});
+
 			$(function() {
-				
+
 				//http://www.htmleaf.com/jQuery/Layout-Interface/201502171389.html
 				//圆环插件api地址
 
-				var container = $('#indicatorContainer'),
-					containerProg = $('#indicatorContainer').radialIndicator({
-						barColor: '#0094fd',
-						barBgcolor: '#b9b9b9',
-						radius: 40,
-						displayNumber: false,
-						minValue: 0,
-						percentage: true,
-						barWidth: 5,
-						maxValue: 100,//最大值默认100
-					}).data('radialIndicator');
-				var s = $(".rad-cntnt span").text();
-				var d = $("#rad-sum").text();
-				containerProg.option('maxValue', d);//重置最大值
-				setTimeout(function() {
+				var _indicator = $(".indicator");
+				for(var i = 0; i < _indicator.length; i++) {
+					var container = $('#indicatorContainer' + i),
+						containerProg = $('#indicatorContainer' + i).radialIndicator({
+							barColor: '#0094fd',
+							barBgcolor: '#b9b9b9',
+							radius: 40,
+							displayNumber: false,
+							minValue: 0,
+							percentage: true,
+							barWidth: 5,
+							maxValue: 100, //最大值默认100
+						}).data('radialIndicator'),
+						s = $('#indicatorContainer' + i).find(".rad-cntnt span").text(),
+						d = $('#indicatorContainer' + i).find(".rad-sum").text();
+					containerProg.option('maxValue', d); //重置最大值
 					containerProg.animate(s);
-				}, 500);
+
+				}
 			})
 		</script>
 	</body>
