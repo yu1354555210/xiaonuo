@@ -1077,4 +1077,32 @@ textarea {
 .agreement .checkbox.active {
   background-image: url(../img/icon_checked.png);
 }
+.indicator {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.rad-cntnt {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  color: #333333;
+}
+.rad-cntnt b {
+  display: block;
+  font-weight: normal;
+}
+.rad-cntnt span {
+  color: #ff5f08;
+  font-size: 1.291666rem;
+}
 /*# sourceMappingURL=style.css.map */
