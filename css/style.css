@@ -150,10 +150,23 @@ textarea {
   color: #fff;
 }
 .header h1 {
+  font-size: 1.291666rem;
   flex: 1;
   -webkit-flex: 1;
-  font-size: 1.291666rem;
   font-weight: normal;
+}
+.header a {
+  font-size: 1rem;
+  color: #fff;
+}
+.mine-header {
+  justify-content: space-between;
+  padding: 0 1.166666rem;
+}
+.icon-exit {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/icon-exit.png);
 }
 .icon-back,
 .icon-close {
@@ -1309,5 +1322,61 @@ textarea {
 }
 .cz-record-box .cz-record-table .cz-record-td {
   color: #333333;
+}
+.code-list .goods-item {
+  margin-top: 0;
+}
+.goods-head-info {
+  height: 2.083333rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333333;
+  padding: 0 1.5rem;
+  width: 100%;
+  margin-top: 0.833333rem;
+}
+.goods-head-info i {
+  font-style: normal;
+}
+.goods-head-info span {
+  color: #0096fd;
+}
+.goods-head-info em {
+  font-style: normal;
+  color: #565656;
+}
+.goods-item-null {
+  padding: 10rem 0;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333;
+}
+.ntegral-wrap li {
+  padding: 1rem 1.25rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.083333rem;
+  color: #333333;
+}
+.ntegral-wrap li dl {
+  flex: 0 0 80%;
+  -webkit-flex: 0 0 80%;
+  line-height: 1.5rem;
+}
+.ntegral-wrap li dd {
+  color: #999999;
+  margin-top: 0.416666rem;
+}
+.ntegral-wrap li div {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+.ntegral-wrap li div span {
+  color: #3cbc45;
 }
 /*# sourceMappingURL=style.css.map */
