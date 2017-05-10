@@ -1395,8 +1395,8 @@ textarea {
   align-items: center;
 }
 .top dt {
-  flex: 0 0 3.25rem;
-  -webkit-flex: 0 0 3.25rem;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
   width: 3.25rem;
   height: 3.25rem;
   margin-right: 0.708333rem;
@@ -1411,6 +1411,19 @@ textarea {
 }
 .top dd p {
   font-size: 0.791666rem;
+}
+.top dd p span {
+  font-size: 0.958333rem;
+}
+.seller-top dt {
+  width: 5rem;
+  height: 3.75rem;
+}
+.seller-top dt img {
+  height: 100%;
+}
+.seller-top dd p {
+  line-height: 1.666666rem;
 }
 .member-info {
   height: 3.25rem;
@@ -1550,5 +1563,51 @@ textarea {
 }
 .momment-btn-box {
   margin-top: 7.5rem;
+}
+.icon-seller-phone {
+  background-image: url(../img/icon_seller_phone.png);
+  width: 1.166666rem;
+  height: 1.166666rem;
+  margin-right: 0.416666rem;
+}
+.seller-admin-wrap {
+  padding-top: 1.25rem;
+}
+.seller-admin-item {
+  padding: 1.666666rem 2.083333rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+}
+.seller-admin-item a {
+  flex: 0 0 33.3%;
+  -webkit-flex: 0 0 33.3%;
+  font-size: 1.083333rem;
+  text-align: center;
+  color: #333333;
+}
+.seller-admin-item a span {
+  display: block;
+  width: 100%;
+}
+.seller-admin-item a i {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.833333rem;
+}
+.seller-admin-item a:active {
+  background-color: #eee;
+}
+.icon-ver-code {
+  background-image: url(../img/icon_ver.png);
+}
+.icon-order {
+  background-image: url(../img/icon_order.png);
+}
+.icon-ver-record {
+  background-image: url(../img/icon_record.png);
+}
+.icon-shop-info {
+  background-image: url(../img/icon_shop.png);
 }
 /*# sourceMappingURL=style.css.map */
