@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>目录</title>
+		<script src="js/fontrem.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
-			a{
-				font-size: 20px;
-				line-height: 50px;
+			.wrap{
+				display: flex;
+				display: -webkit-flex;
+				flex-wrap: wrap;
+			}
+			a {
+				flex: 0 0 50%;
+				-webkit-flex: 0 0 50%;
+				font-size: 1rem;
+				line-height: 2.083333rem;
 				text-decoration: none;
 				text-align: center;
 				display: block;
@@ -16,19 +25,25 @@
 			}
 		</style>
 	</head>
+
 	<body>
-		<a href="index.html">首页</a>
-		<a href="duihuanchenggong.html">兑换成功</a>
-		<a href="duihuanchenggong2.html">兑换成功2</a>
-		<a href="duihuanxiangqing.html">兑换详情</a>
-		<a href="shangjiajieshao.html">商家介绍</a>
-		<a href="xiaonuofuwu.html">小诺服务</a>
-		<a href="fujinshangjia.html">附近商家</a>
-		<a href="tijiaodingdan.html">提交订单</a>
-		<a href="tucengka.html">涂层卡</a>
-		<a href="huiyuanzhuce.html">会员注册</a>
-		<a href="huiyuanzhongxin.html">会员中心</a>
-		<a href="wodeshiyongma.html">我的使用码</a>
-		<a href="jifenmingxi.html">积分明细</a>
+		<div class="wrap">
+			<a href="index.html">首页</a>
+			<a href="duihuanchenggong.html">兑换成功</a>
+			<a href="duihuanchenggong2.html">兑换成功2</a>
+			<a href="duihuanxiangqing.html">兑换详情</a>
+			<a href="shangjiajieshao.html">商家介绍</a>
+			<a href="xiaonuofuwu.html">小诺服务</a>
+			<a href="fujinshangjia.html">附近商家</a>
+			<a href="tijiaodingdan.html">提交订单</a>
+			<a href="tucengka.html">涂层卡</a>
+			<a href="huiyuanzhuce.html">会员注册</a>
+			<a href="huiyuandenglu.html">会员登录</a>
+			<a href="member/huiyuanzhongxin.html">会员中心</a>
+			<a href="member/wodeshiyongma.html">我的使用码</a>
+			<a href="member/jifenmingxi.html">积分明细</a>
+			<a href="member/wode.html">我的</a>
+		</div>
 	</body>
+
 </html>
