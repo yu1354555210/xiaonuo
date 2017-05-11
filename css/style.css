@@ -1292,39 +1292,41 @@ textarea {
   line-height: 3.333333rem;
   color: #666666;
 }
-.cz-record-box .cz-record-table {
+.cz-record-table {
   width: 100%;
   text-align: center;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
   border: 1px solid #d2d2d2;
 }
-.cz-record-box .cz-record-table .cz-record-tr {
+.cz-record-table .cz-record-tr {
+  flex-wrap: wrap;
+  display: flex;
+  display: -webkit-flex;
   width: 100%;
   height: 2.416666rem;
   vertical-align: middle;
   font-size: 0.958333rem;
 }
-.cz-record-box .cz-record-table .cz-record-tr:nth-child(odd) {
+.cz-record-table .cz-record-tr:nth-child(odd) {
   background-color: #f8f8f8;
 }
-.cz-record-box .cz-record-table .cz-record-td,
-.cz-record-box .cz-record-table .cz-record-th {
-  width: 50%;
+.cz-record-table .cz-record-td,
+.cz-record-table .cz-record-th {
+  flex: 1;
+  -webkit-flex: 1;
   height: 2.416666rem;
   line-height: 2.416666rem;
   float: left;
-}
-.cz-record-box .cz-record-table .cz-record-td:first-child,
-.cz-record-box .cz-record-table .cz-record-th:first-child {
   border-right: 1px solid #d2d2d2;
 }
-.cz-record-box .cz-record-table .cz-record-th {
+.cz-record-table .cz-record-td:last-child,
+.cz-record-table .cz-record-th:last-child {
+  border-right: none;
+}
+.cz-record-table .cz-record-th {
   background-color: #c7e8ff;
   color: #0096fd;
 }
-.cz-record-box .cz-record-table .cz-record-td {
+.cz-record-table .cz-record-td {
   color: #333333;
 }
 .code-list .goods-item {
@@ -1609,5 +1611,283 @@ textarea {
 }
 .icon-shop-info {
   background-image: url(../img/icon_shop.png);
+}
+.seller-info-list .seller-info-item {
+  padding: 1rem 1.375rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seller-info-list .seller-info-item span {
+  color: #333333;
+  font-size: 1.083333rem;
+  width: 6.25rem;
+  flex: 0 0 6.25rem;
+  -webkit-flex: 0 0 6.25rem;
+}
+.seller-info-list .seller-info-item p {
+  color: #555555;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+.seller-info-list .seller-info-item img {
+  width: 4.333333rem;
+  height: 3.166666rem;
+}
+.seller-vel-list .seller-vel-item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.seller-vel-list .seller-vel-item a {
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+  display: block;
+  color: #333333;
+  font-size: 1.083333rem;
+}
+.seller-vel-list .seller-vel-item a:active {
+  background-color: #eee;
+}
+.seller-vel-list .seller-vel-item span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.seller-vel-list .seller-vel-item i {
+  width: 1.916666rem;
+  height: 1.916666rem;
+  margin-right: 0.833333rem;
+}
+.icon-vel-code {
+  background-image: url(../img/icon_ver_code.png);
+}
+.icon-import-val {
+  background-image: url(../img/icon_val.png);
+}
+.import-val {
+  padding: 2.5rem 1.5rem;
+  overflow: hidden;
+}
+.import-val .import-input {
+  width: 100%;
+  padding-left: 1em;
+  height: 3.333333rem;
+  line-height: 3.333333rem;
+  color: #999999;
+  font-size: 1.083333rem;
+  border: 1px solid #eee;
+  outline: none;
+  margin-bottom: 2.5rem;
+}
+.import-val .import-btn-box {
+  text-align: center;
+}
+.import-val .import-btn-box .btn-short {
+  font-size: 1.291666rem;
+  width: 7.083333rem;
+  height: 2.916666rem;
+}
+.import-val .import-btn-box .btn-short.btn-short-sub {
+  background-color: #0096fd;
+  margin-right: 0.833333rem;
+}
+.import-val .import-btn-box .btn-short.btn-short-canle {
+  background-color: #b0b2b4;
+}
+.order-sort {
+  margin-bottom: 1.25rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  text-align: right;
+}
+.order-sort a {
+  color: #333333;
+  font-size: 0.875rem;
+}
+.order-sort a.on {
+  color: #0096fd;
+}
+.order-sort em {
+  font-style: normal;
+  margin: 0 0.416666rem;
+}
+.order-list {
+  padding: 1.25rem 0.833333rem;
+}
+.order-list .order-item {
+  border: 1px solid #bbb;
+  margin-bottom: 0.708333rem;
+  position: relative;
+}
+.order-list .order-item .order-item-title {
+  display: flex;
+  display: -webkit-flex;
+  height: 3.333333rem;
+  border-bottom: 1px solid #bbb;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 0 0.625rem;
+}
+.order-list .order-item .order-item-title > img {
+  width: 1.791666rem;
+  height: 1.791666rem;
+  margin-right: 0.625rem;
+}
+.order-list .order-item .order-item-title span {
+  font-size: 1rem;
+  color: #0096fd;
+  display: inline-block;
+  max-width: 10.416666rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.order-list .order-item .order-item-title em {
+  margin-left: 1.041666rem;
+  font-style: normal;
+  color: #999999;
+  font-size: 0.708333rem;
+}
+.order-list .order-item .order-item-title.order-item-title-toggle {
+  border-bottom-color: transparent;
+}
+.order-list .order-item .order-item-title.order-item-title-toggle .icon-toggle {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.order-list .order-item .order-item-wrap-head {
+  height: 2.833333rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.458333rem 0 0.625rem;
+}
+.order-list .order-item .order-item-wrap-head dt {
+  width: 1.416666rem;
+  height: 1.416666rem;
+  margin-right: 0.625rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.order-list .order-item .order-item-wrap-head dd {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875rem;
+  color: #333333;
+}
+.order-list .order-item .order-item-wrap-head span {
+  color: #777777;
+}
+.order-list .order-item .order-item-wrap-content {
+  padding: 0.75rem;
+}
+.order-list .order-item .order-item-wrap-content .order-comment-text {
+  font-size: 0.875rem;
+  color: #777777;
+  line-height: 1.5rem;
+}
+.order-list .order-item .order-item-wrap-content .order-comment-text span {
+  color: #333333;
+}
+.order-list .order-item .order-item-wrap-content .order-comment-textarea textarea {
+  min-height: 3.166666rem;
+  border: 1px solid #f3f3f3;
+  padding: 0.625rem;
+  color: #999999;
+  font-size: 0.791666rem;
+  width: 100%;
+  outline: none;
+  margin: 0.625rem 0;
+  resize: none;
+}
+.order-list .order-item .order-item-total-info {
+  padding: 0.833333rem 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-list .order-item .order-item-total-info > div {
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+  padding: 0.625rem 0;
+}
+.order-list .order-item .order-item-total-info > div span {
+  color: #6bc3ff;
+  font-size: 1.291666rem;
+}
+.order-list .order-item .order-item-total-info > div p {
+  color: #777777;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+.order-list .order-item .order-item-total-info > div.order-item-total-fl {
+  border-right: 1px solid #eee;
+}
+.order-list .cz-record-table .cz-record-th {
+  border-bottom: 1px solid #dddddd;
+  background-color: #f8f8f8;
+}
+.btn-comment {
+  width: 2.583333rem;
+  height: 1.375rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  border: none;
+  -webkit-border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  outline: none;
+}
+.btn-reply {
+  color: #fff;
+  background-color: #4bb569;
+}
+.btn-comment-canle {
+  background-color: #F8F8F8;
+  color: #f9ae37;
+  border: 1px solid #f9ae37;
+  margin-left: auto;
+  position: absolute;
+  right: 3.041666rem;
+  top: 1rem;
+  z-index: 3;
+}
+.icon-toggle {
+  width: 1.458333rem;
+  height: 1.458333rem;
+  background-image: url(../img/icon_toggle.png);
+  margin-left: auto;
+}
+.order-comment-seller-reply {
+  margin-top: 0.416666rem;
+  -webkit-border-radius: 0.208333rem;
+  -moz-border-radius: 0.208333rem;
+  border-radius: 0.208333rem;
+  padding: 0.416666rem 0.833333rem;
+  position: relative;
+  background-color: #f0f0f0;
+  font-size: 0.791666rem;
+  color: #777777;
+  font-family: simhei;
+  line-height: 1.25rem;
+}
+.order-comment-seller-reply:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.416666rem solid transparent;
+  border-right: 0.416666rem solid transparent;
+  border-bottom: 0.416666rem solid #f0f0f0;
+  position: absolute;
+  top: -0.3rem;
+  left: 1.166666rem;
 }
 /*# sourceMappingURL=style.css.map */

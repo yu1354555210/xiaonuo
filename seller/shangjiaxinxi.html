@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<!--[if !IE]>
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    	<!--<![endif]-->
+		<title>小诺汽车---商家信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<script src="../js/fontrem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<a href="#" class="icon-back"></a>
+				<h1>商家信息</h1>
+			</header>
+			<div class="seller-info-list">
+				<div class="seller-info-item bor-small-after">
+					<span>门店图片</span>
+					<div class="goods-code-img">
+						<img src="../img/content_img_01.jpg"/>
+					</div>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>门店名称</span>
+					<p>沈阳天地合汽车保养中心</p>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>地址</span>
+					<p>沈阳皇姑区崇山西路1-1-1门</p>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>电话</span>
+					<p>024-66888866</p>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>营业时间</span>
+					<p>9:00-22:00</p>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>服务项目</span>
+					<p>洗车，打蜡，精洗</p>
+				</div>
+				<div class="seller-info-item bor-small-after">
+					<span>门店介绍</span>
+					<p>从事汽车美容、汽车养护、汽车装饰的汽车服务机构，全力推行“七分养，三分修”国际爱车新理念在中国的发展。以北京驰耐普直营店为榜样，让有车族感受到五星级的服务，三星级的收费。</p>
+				</div>
+			</div>
+		</div>
+		<div class="big-code">
+			<div class="big-code-img">
+				<img />
+			</div>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".goods-code-img").find('img').each(function(i){
+					var imgUrl = $(this).attr('src');
+					$(this).click(function(){
+						$(".big-code").fadeIn().find('img').attr('src',imgUrl);
+					});
+				});
+				
+				$(".big-code").click(function(e){
+					$(this).fadeOut();
+				});
+			});
+		</script>
+	</body>
+
+</html>
