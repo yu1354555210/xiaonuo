@@ -373,6 +373,10 @@ textarea {
   padding: 0 0.75rem;
   position: relative;
 }
+.serve-title li a {
+  color: #fff;
+  display: block;
+}
 .serve-title li.on:after {
   content: '';
   display: block;
