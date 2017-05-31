@@ -244,27 +244,46 @@ textarea {
 
 .star-box {
     font-size: 0;
-    background-image: url(../img/icon_star_while.png);
+    background-image: url(../img/star-off.png);
     background-repeat: repeat-x;
-    .bgSize(20px);
-    width: 100px;
-    height: 20px;
+    .bgSize(14px);
+    width: 70px;
+    height: 14px;
     overflow: hidden;
     vertical-align: middle;
     position: relative;
     .star {
         overflow: hidden;
-        height: 20px;
+        height: 14px;
         display: inline-block;
         vertical-align: middle;
-        background-image: url(../img/icon_star.png);
+        background-image: url(../img/star-on.png);
         background-repeat: repeat-x;
-        .bgSize(20px);
+        .bgSize(14px);
         position: absolute;
         left: 0;
+        &.star-1{
+            width: 20%;
+        }
+        &.star-2{
+            width: 40%;
+        }
+        &.star-3{
+            width: 60%;
+        }
+        &.star-4{
+            width: 80%;
+        }
+        &.star-5{
+            width: 100%;
+        }
     }
 }
-
+.click-star{
+    img{
+        width: 14px;
+    }
+}
 .article-star {
     position: absolute;
     right: 1.666666rem;
@@ -1564,6 +1583,10 @@ textarea {
 
 .icon-md {
     background-image: url(../img/icon_md.png);
+}
+
+.icon-tuceng{
+    background-image: url(../img/icon_tuceng.png);
 }
 
 .comment-seller-head {

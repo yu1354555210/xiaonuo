@@ -37,15 +37,23 @@
 				<div class="comment-textarea">
 					<textarea placeholder="填写评论"></textarea>
 				</div>
-				<div class="star-box">
-					<div class="star" style="width: 60%;"></div>
-				</div>
+				<div class="click-star"></div>
 				<div class="momment-btn-box">
 					<input type="button" id="" value="提交评价" class="btn-long" />
 				</div>
 			</div>
 		</div>
 		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$.fn.raty.defaults.path = '../img';
+
+			$('.click-star').raty({
+				click: function(score, evt) {
+					alert(score);
+				}
+			});
+		</script>
 	</body>
 
 </html>
