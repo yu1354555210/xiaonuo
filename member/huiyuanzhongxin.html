@@ -37,42 +37,48 @@
 			<div class="member-container swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="member-item bor-small-after">
-							<div class="indicator" id="indicatorContainer0">
-								<div class="rad-cntnt">
-									<div class="rad-sum" style="display: none;">100</div>
-									<b>剩余</b><span>75</span>个
+						<a href="#">
+							<div class="member-item bor-small-after">
+								<div class="indicator" id="indicatorContainer0">
+									<div class="rad-cntnt">
+										<div class="rad-sum" style="display: none;">100</div>
+										<b>剩余</b><span>75</span>个
+									</div>
+								</div>
+								<div class="member-item-wrap">
+									<strong><span>普洗车</span>使用码</strong>
+									<p>所有门店通用</p>
 								</div>
 							</div>
-							<div class="member-item-wrap">
-								<strong><span>普洗车</span>使用码</strong>
-								<p>所有门店通用</p>
-							</div>
-						</div>
-						<div class="member-item bor-small-after">
-							<div class="indicator" id="indicatorContainer1">
-								<div class="rad-cntnt">
-									<div class="rad-sum" style="display: none;">100</div>
-									<b>剩余</b><span>35</span>个
+						</a>
+						<a href="#">
+							<div class="member-item bor-small-after">
+								<div class="indicator" id="indicatorContainer1">
+									<div class="rad-cntnt">
+										<div class="rad-sum" style="display: none;">100</div>
+										<b>剩余</b><span>35</span>个
+									</div>
+								</div>
+								<div class="member-item-wrap">
+									<strong><span>精洗车</span>使用码</strong>
+									<p>所有门店通用</p>
 								</div>
 							</div>
-							<div class="member-item-wrap">
-								<strong><span>精洗车</span>使用码</strong>
-								<p>所有门店通用</p>
-							</div>
-						</div>
-						<div class="member-item bor-small-after">
-							<div class="indicator" id="indicatorContainer2">
-								<div class="rad-cntnt">
-									<div class="rad-sum" style="display: none;">100</div>
-									<b>剩余</b><span>65</span>个
+						</a>
+						<a href="#">
+							<div class="member-item bor-small-after">
+								<div class="indicator" id="indicatorContainer2">
+									<div class="rad-cntnt">
+										<div class="rad-sum" style="display: none;">100</div>
+										<b>剩余</b><span>65</span>个
+									</div>
+								</div>
+								<div class="member-item-wrap">
+									<strong><span>精打蜡</span>使用码</strong>
+									<p>所有门店通用</p>
 								</div>
 							</div>
-							<div class="member-item-wrap">
-								<strong><span>精打蜡</span>使用码</strong>
-								<p>所有门店通用</p>
-							</div>
-						</div>
+						</a>
 					</div>
 					<div class="swiper-slide swiper-slide-while">
 						<div class="xf-record-item">
@@ -168,16 +174,19 @@
 			$('.member-tabs li').click(function() {
 				mySwiper.slideTo($(this).index());
 			});
+//
+			for(var j = 3; j < 6; j++) {
+				var boarddiv = '<a href="#"><div class="member-item bor-small-after"><div class="indicator" id="indicatorContainer' + j + '"><div class="rad-cntnt"><div class="rad-sum" style="display: none;">100</div><b>剩余</b><span>75</span>个</div></div><div class="member-item-wrap"><strong><span>普洗车</span>使用码</strong><p>所有门店通用</p></div></div></a>';
+				$(".member-container .swiper-slide").eq(0).append(boarddiv);
+			}
 
-			$(function() {
-
-				//http://www.htmleaf.com/jQuery/Layout-Interface/201502171389.html
-				//圆环插件api地址
-
+			//http://www.htmleaf.com/jQuery/Layout-Interface/201502171389.html
+			//圆环插件api地址
+//			$(function(){
 				var _indicator = $(".indicator");
 				for(var i = 0; i < _indicator.length; i++) {
 					var container = $('#indicatorContainer' + i),
-						containerProg = $('#indicatorContainer' + i).radialIndicator({
+						containerProg = container.radialIndicator({
 							barColor: '#0094fd',
 							barBgcolor: '#b9b9b9',
 							radius: 40,
@@ -187,13 +196,12 @@
 							barWidth: 5,
 							maxValue: 100, //最大值默认100
 						}).data('radialIndicator'),
-						s = $('#indicatorContainer' + i).find(".rad-cntnt span").text(),
-						d = $('#indicatorContainer' + i).find(".rad-sum").text();
+						s = container.find(".rad-cntnt span").text(),
+						d = container.find(".rad-sum").text();
 					containerProg.option('maxValue', d); //重置最大值
 					containerProg.animate(s);
-
 				}
-			})
+//			})
 		</script>
 	</body>
 
