@@ -300,15 +300,24 @@ textarea {
 .contact-item-box .contact-item {
   display: block;
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
-  padding: 0 1.583333rem;
+  line-height: 1.3rem;
+  padding: 1rem 1.583333rem;
   color: #555555;
   font-size: 0.875rem;
   position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .contact-item-box .contact-item span {
   margin-left: 0.625rem;
+  flex: 0 0 85%;
+  -webkit-flex: 0 0 85%;
+}
+.contact-item-box .contact-item i {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .contact-item-box .contact-item:before {
   content: '';
