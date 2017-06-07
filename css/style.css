@@ -176,6 +176,12 @@ textarea {
   flex: 0 0 3.125rem;
   -webkit-flex: 0 0 3.125rem;
 }
+.back {
+  width: 3.125rem;
+  height: 3.125rem;
+  flex: 0 0 3.125rem;
+  -webkit-flex: 0 0 3.125rem;
+}
 .icon-close {
   background-image: url(../img/icon_close.png);
 }
