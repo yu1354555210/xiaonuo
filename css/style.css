@@ -168,6 +168,19 @@ textarea {
   height: 2rem;
   background-image: url(../img/icon_exit.png);
 }
+.go-exit {
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  margin-right: -0.5rem;
+}
+.go-exit-img {
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+}
 .icon-back,
 .icon-close {
   width: 3.125rem;
@@ -181,6 +194,9 @@ textarea {
   height: 3.125rem;
   flex: 0 0 3.125rem;
   -webkit-flex: 0 0 3.125rem;
+}
+.back .go-back {
+  width: 100%;
 }
 .icon-close {
   background-image: url(../img/icon_close.png);
@@ -1929,5 +1945,37 @@ textarea {
   position: absolute;
   top: -0.3rem;
   left: 1.166666rem;
+}
+.agreement-wrap {
+  padding: 0 0.416666rem 1.5rem;
+}
+.agreement-wrap .agreement-title {
+  text-align: center;
+  padding: 1.25rem 0;
+  color: #333;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+}
+.agreement-wrap h2 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: normal;
+  margin: 0.833333rem 0;
+}
+.agreement-wrap p {
+  text-indent: 2em;
+  line-height: 1.458333rem;
+  font-size: 0.8rem;
+  color: #6f6f6f;
+  margin-bottom: 0.833333rem;
+}
+.agreement-wrap p strong {
+  font-weight: normal;
+  color: #c00000;
+}
+.agreement-wrap .text-indent p {
+  margin-bottom: 0.416666rem;
+  text-indent: 3em;
 }
 /*# sourceMappingURL=style.css.map */
