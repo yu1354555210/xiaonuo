@@ -1972,10 +1972,17 @@ textarea {
 }
 .agreement-wrap p strong {
   font-weight: normal;
-  color: #c00000;
 }
 .agreement-wrap .text-indent p {
   margin-bottom: 0.416666rem;
   text-indent: 3em;
+}
+.member-card-wrap h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.member-card-wrap p {
+  color: #333;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
