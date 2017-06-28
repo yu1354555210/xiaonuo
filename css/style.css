@@ -1985,4 +1985,56 @@ textarea {
   color: #333;
   font-size: 1rem;
 }
+.recharge-item {
+  display: block;
+  width: 100%;
+  line-height: 1.3rem;
+  padding: 1rem 1.583333rem;
+  color: #333333;
+  font-size: 1.166666rem;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.recharge-title {
+  background-color: #f8f8f8;
+  height: 3.333333rem;
+  line-height: 3.333333rem;
+  padding: 0 1rem;
+  color: #333333;
+  font-size: 1.25rem;
+}
+.recharge-btn-box {
+  padding: 2.083333rem 0.833333rem;
+  overflow: hidden;
+}
+.recharge-btn-box ul {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recharge-btn-box ul li {
+  margin-bottom: 1.458333rem;
+}
+.recharge-btn-box .recharge-btn {
+  width: 7.75rem;
+  height: 4.083333rem;
+  color: #fff;
+  -webkit-border-radius: 0.416666rem;
+  border-radius: 0.416666rem;
+  background-color: #2188e9;
+  border: none;
+  outline: none;
+  font-size: 1.333333rem;
+}
+.recharge-btn-box .recharge-btn span {
+  font-size: 1.125rem;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
