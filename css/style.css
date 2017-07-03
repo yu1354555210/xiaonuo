@@ -1973,9 +1973,12 @@ textarea {
 .agreement-wrap p strong {
   font-weight: normal;
 }
-.agreement-wrap .text-indent p {
+.text-indent > p {
   margin-bottom: 0.416666rem;
   text-indent: 3em;
+}
+.text-indent .text-indent p {
+  text-indent: 4em;
 }
 .member-card-wrap h2 {
   font-weight: bold;
@@ -2008,7 +2011,7 @@ textarea {
   font-size: 1.25rem;
 }
 .recharge-btn-box {
-  padding: 2.083333rem 0.833333rem;
+  padding: 2.083333rem 0.833333rem 0.833333rem;
   overflow: hidden;
 }
 .recharge-btn-box ul {
@@ -2025,16 +2028,29 @@ textarea {
 .recharge-btn-box .recharge-btn {
   width: 7.75rem;
   height: 4.083333rem;
-  color: #fff;
+  color: #51aeee;
+  border: 1px solid #51aeee;
   -webkit-border-radius: 0.416666rem;
   border-radius: 0.416666rem;
-  background-color: #2188e9;
-  border: none;
+  background-color: #fff;
   outline: none;
   font-size: 1.333333rem;
 }
 .recharge-btn-box .recharge-btn span {
   font-size: 1.125rem;
   display: block;
+}
+.recharge-agreement-wrap {
+  padding: 1.25rem;
+  overflow: hidden;
+  font-size: 1.083333rem;
+  color: #333333;
+  line-height: 1.875rem;
+}
+.recharge-agreement-wrap p {
+  margin-bottom: 0.833333rem;
+}
+.recharge-agreement-wrap span {
+  color: #51aeee;
 }
 /*# sourceMappingURL=style.css.map */

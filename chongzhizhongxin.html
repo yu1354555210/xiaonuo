@@ -11,7 +11,6 @@
     	<!--<![endif]-->
 		<title>小诺汽车---充值中心</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link href="http://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
 		<script src="js/fontrem.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
@@ -23,68 +22,41 @@
 				</div>
 				<h1>充值中心</h1>
 			</header>
-			<div class="this-tabs">
-				<ul>
-					<li>
-						<a href="javascript:;" class="bor-small-after on">在线充值</a>
-					</li>
-					<li>
-						<a href="javascript:;" class="bor-small-after">充值说明 </a>
-					</li>
-				</ul>
-			</div>
-			<div class="recharge-list swiper-container">
-				<div class="swiper-wrapper">
-					<div class="recharge-online swiper-slide">
-						<div class="recharge-item bor-small-after">
-							<label>充值账户:</label>
-							<span>神威</span>
-						</div>
-						<div class="recharge-item bor-small-after">
-							<label>剩余积分:</label>
-							<span>100积分</span>
-						</div>
-						<div class="recharge-title">请选择充值额度</div>
-						<div class="recharge-btn-box">
-							<ul>
-								<li><button class="recharge-btn">充值20<span>活动起冲20</span></button></li>
-								<li><button class="recharge-btn">充值200</li>
-								<li><button class="recharge-btn">充值300<span>送20</span></button></li>
-								<li><button class="recharge-btn">充值500<span>送50</span></button></li>
-								<li><button class="recharge-btn">充值800<span>送100</span></button></li>
-								<li><button class="recharge-btn">充值1500<span>送200</span></button></li>
-								<li><button class="recharge-btn">充值2000<span>送300</span></button></li>
-								<li><button class="recharge-btn">充值3000<span>送500</span></button></li>
-								<li><button class="recharge-btn">充值5000<span>送1000</span></button></li>
-							</ul>
-						</div>
+			<div class="recharge-list">
+				<div class="recharge-online">
+					<div class="recharge-item bor-small-after">
+						<label>充值账户:</label>
+						<span>神威</span>
 					</div>
-					<div class="recharge-online swiper-slide">
-						<div class="agreement-wrap member-card-wrap">
-							<h2>会员等级：</h2>
-							<p>银卡会员：充值200元起</p>
-							<p>金卡会员：会员每年累计充值1500（赠送增值服务：全年32项汽车检测，全年免费四轮定位2次，轮胎免费补气）</p>
-							<p>白金卡会员：会员每年累计充值3000（赠送增值服务：全年32项汽车检测，全年免费四轮定位4次，轮胎免费补气，玻璃水免费续加12瓶，免费车辆年检）</p>
-							<p>钻石卡会员：会员每年累计充值5000（赠送增值服务：全年32项汽车检测，全年免费四轮定位8次，轮胎免费补气，玻璃水免费续加24瓶，免费车辆年检，免费清洗内饰。）</p>
-						</div>
+					<div class="recharge-item bor-small-after">
+						<label>剩余积分:</label>
+						<span>100积分</span>
+					</div>
+					<div class="recharge-title">请选择充值额度</div>
+					<div class="recharge-btn-box">
+						<ul>
+							<li><button class="recharge-btn">充值20<span>活动起冲20</span></button></li>
+							<li><button class="recharge-btn">充值200</li>
+							<li><button class="recharge-btn">充值300<span>送20</span></button></li>
+							<li><button class="recharge-btn">充值500<span>送50</span></button></li>
+							<li><button class="recharge-btn">充值800<span>送100</span></button></li>
+							<li><button class="recharge-btn">充值1500<span>送200</span></button></li>
+							<li><button class="recharge-btn">充值2000<span>送300</span></button></li>
+							<li><button class="recharge-btn">充值3000<span>送500</span></button></li>
+							<li><button class="recharge-btn">充值5000<span>送1000</span></button></li>
+						</ul>
+					</div>
+					<div class="recharge-title">会员卡等级说明</div>
+					<div class="recharge-agreement-wrap">
+						<p><span>银卡会员：</span>充值200元起</p>
+						<p><span>金卡会员：</span>会员每年累计充值1500（赠送增值服务：全年32项汽车检测，全年免费四轮定位2次，轮胎免费补气）</p>
+						<p><span>白金卡会员：</span>会员每年累计充值3000（赠送增值服务：全年32项汽车检测，全年免费四轮定位4次，轮胎免费补气，玻璃水免费续加12瓶，免费车辆年检）</p>
+						<p><span>钻石卡会员：</span>会员每年累计充值5000（赠送增值服务：全年32项汽车检测，全年免费四轮定位8次，轮胎免费补气，玻璃水免费续加24瓶，免费车辆年检，免费清洗内饰。）</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-		<script src="http://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
-		<script type="text/javascript">
-			var mySwiper = new Swiper('.recharge-list', {
-				autoHeight: true,
-				onSlideChangeStart: function(swiper) {
-					$('.this-tabs a').eq(mySwiper.activeIndex).addClass('on').parent().siblings().find('a').removeClass('on');
-				},
-			})
-			$('.this-tabs li').click(function() {
-				mySwiper.slideTo($(this).index());
-			});
-
-		</script>
 	</body>
 
 </html>
